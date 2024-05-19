@@ -1,0 +1,174 @@
+ Đề 6
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <img src="./img/Bongban1.png" alt="" />
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>Trang chủ</li>
+          <li>Thanh toán</li>
+          <li>Sản phẩm</li>
+          <li>Thành viên</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <img src="./img/quangcao.jpg" alt="" />
+        <div class="list_img">
+          <div>
+            <img src="./img/cotvot.png" alt="" />
+            <p>Cốt vợt</p>
+          </div>
+          <div>
+            <img src="./img/matvot.png" alt="" />
+            <p>Mặt vợt</p>
+          </div>
+          <div>
+            <img src="./img/phukien.png" alt="" />
+            <p>Phụ kiện bóng bàn</p>
+          </div>
+          <div>
+            <img src="./img/dungcu.png" alt="" />
+            <p>Dụng cụ bóng bàn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="content-footer">
+          <div>
+            <h1>Thông tin liên hệ</h1>
+          </div>
+          <p>
+            Địa chỉ: Số 2A, đường 30/4, KP3 phường Trung Dũng, Tp Biên Hoà, tỉnh
+            Đồng Nai
+          </p>
+          <p>Điện thoại: 0912215891</p>
+          <p>Email: shopbongban@gmail.com</p>
+        </div>
+
+        <div class="content-footer">
+          <div>
+            <h1>Liên kết nhanh</h1>
+          </div>
+          <p>Tin tức</p>
+          <p>Sản phẩm</p>
+          <p>Thành viên</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề6css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  /* nếu k có cái kia thì từ đây */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+}
+
+.menu {
+  background-color: #da2328;
+  height: 50px;
+}
+
+.menu > ul {
+  display: flex;
+  color: #fff;
+  gap: 20px;
+}
+
+.menu > ul > li {
+  margin: 0 20px;
+  line-height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+.content > img {
+  width: 100%;
+}
+
+.list_img {
+  display: flex;
+  width: 1200px;
+}
+.list_img > div {
+  background-color: #ccc;
+  padding: 30px;
+  margin: 20px;
+}
+
+.list_img > div > img {
+  width: 200px;
+}
+
+.list_img > div > p {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #da2328;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.footer {
+  display: flex;
+  background-color: #da2328;
+  color: #fff;
+}
+
+.content-footer {
+  margin: 10px 20px;
+}
+
+.content-footer > div {
+  flex: 1;
+  font-size: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
+
+.content-footer > p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
