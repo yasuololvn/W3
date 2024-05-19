@@ -1,0 +1,233 @@
+Đề 21
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <div class="logo">
+          <img src="./img/5.jpg" alt="" />
+        </div>
+        <div class="menu">
+          <ul>
+            <li>VPS</li>
+            <li class="hover">Hosting</li>
+            <li>Email</li>
+            <li>Máy chủ</li>
+            <li>Tên miền</li>
+          </ul>
+        </div>
+
+        <div class="account">
+          <button>Đăng nhập</button>
+          <button>Đăng ký</button>
+        </div>
+      </div>
+
+      <div class="img">
+        <img src="./img/4.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <div class="content_menu">
+          <div>
+            <p>Hosting giá rẻ</p>
+          </div>
+          <div>
+            <p>Hosting Cao cấp</p>
+          </div>
+          <div>
+            <p>Business Hosting</p>
+          </div>
+        </div>
+
+        <div class="ct">
+          <div>
+            <h1>Hosting giá rẻ</h1>
+            <p>Tối ưu chi phí - Nhiều quà tặng kèm</p>
+          </div>
+
+          <div class="ct_text">
+            <div>
+              <img src="./img/6.jpg" alt="" />
+            </div>
+
+            <div class="text">
+              <h1>Hosting giá rẻ là gì ?</h1>
+
+              <p class="p">
+                <span>Hosting Giá Rẻ</span> là dịch vụ cho thuê hosting với chi
+                phi thấp nhưng vẫn đảm bảo sự ổn định và chất lượng mà hosting
+                miễn phi không thể đáp ứng được.
+              </p>
+              <p class="p">
+                Nếu bạn là doanh nghiệp nhỏ, cá nhân, nhà phát triển website hay
+                sinh viên muốn sở hữu một hosting với nhiều tính năng nhưng tối
+                ưu về mặt chi phí thì
+                <span> Hosting Giá Rẻ của Vietnix </span> là lựa chọn hoàn hảo
+                dành cho bạn.
+              </p>
+
+              <button>Dùng thử miễn phí</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h2>CÔNG TY CỔ PHẦN GIẢI PHÁP VÀ CÔNG NGHỆ VIETNIX</h2>
+        <p>265 Hồng Lạc, Phường 10, Quận Tân Bình, Thành Phố Hồ Chí Minh</p>
+        <p>Hotline: 1800 1093</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề 21css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  /* nếu k có cái kia thì từ đây */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > img {
+  width: 100px;
+  height: 50px;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 30px;
+}
+
+.menu > ul > li {
+  font-size: 20px;
+}
+
+.account > button {
+  padding: 8px 12px;
+  background-color: #00dcd5;
+  border: none;
+  font-size: 16px;
+  margin-right: 25px;
+}
+
+.hover {
+  color: #00dcd5;
+  text-decoration: underline;
+}
+
+.img > img {
+  height: 200px;
+  width: 100%;
+}
+
+.content_menu {
+  display: flex;
+  font-size: 30px;
+}
+
+.content_menu > div {
+  padding: 15px 0;
+  flex: 1;
+  text-align: center;
+}
+
+.content_menu > div:first-child {
+  color: #00dcd5;
+  border-bottom: 1px solid #00dcd5;
+}
+
+.ct {
+  margin-top: 20px;
+}
+
+.ct > div {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ct > div > h1 {
+  color: #00dcd5;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.ct > div > p {
+  font-size: 16px;
+}
+
+.ct_text {
+  display: flex;
+}
+
+.ct_text > div {
+  flex: 1;
+}
+.ct_text > div > img {
+  width: 500px;
+  height: 300px;
+}
+
+.text {
+  text-align: start;
+  font-size: 20px;
+}
+
+.text > h1 {
+  color: #00dcd5;
+}
+
+.text > button {
+  background-color: #00dcd5;
+  border: none;
+  padding: 8px 14px;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #1f3984;
+  color: #fff;
+  padding: 12px;
+  line-height: 1.5;
+}
+
+.p {
+  margin: 15px 0;
+}
+
+span {
+  font-weight: 700;
+}
