@@ -1,0 +1,309 @@
+ Đề 4
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <img src="./img/banner.jpg" />
+      </div>
+      <div class="main_content">
+        <div class="menu">
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Bộ sưu tập</a></li>
+            <li><a href="">Sale</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+          <div class="content_right">
+            <div class="content_right-list">
+              <h1>Nam</h1>
+              <ul>
+                <li>Áo</li>
+                <li>Quần</li>
+                <li>Đồ mặc nhà</li>
+                <li>Phụ kiện</li>
+              </ul>
+            </div>
+
+            <div class="content_right-list">
+              <h1>Nam</h1>
+              <ul>
+                <li>Áo</li>
+                <li>Quần</li>
+                <li>Đồ mặc nhà</li>
+                <li>Phụ kiện</li>
+              </ul>
+            </div>
+            <div class="content_right-list">
+              <h1>Nam</h1>
+              <ul>
+                <li>Áo</li>
+                <li>Quần</li>
+                <li>Đồ mặc nhà</li>
+                <li>Phụ kiện</li>
+              </ul>
+            </div>
+
+            <div class="input">
+              <input type="text" />
+            </div>
+            <button class="btn">Tìm kiếm</button>
+          </div>
+
+          <div class="content_left">
+            <div class="content_left-top">
+              <div class="content_left-img">
+                <img src="./img/Vay1.png" />
+              </div>
+              <div class="content_left-text">
+                <h1>Váy liền bé gái</h1>
+
+                <h3>
+                  Mã SP:
+                  <span>23S017</span>
+                </h3>
+
+                <h3>Giá: <span>190.000 đ</span></h3>
+
+                <h3>
+                  Tình trạng:
+                  <span>Còn hàng</span>
+                </h3>
+
+                <h3>Mô tả:</h3>
+                <p class="name">
+                  Váy liền chất liệu 100% cotton, cổ tròn tay phông nhẹ, dánh
+                  xoè
+                </p>
+                <p class="name">Hai màu: xanh ngọc, cam</p>
+                <p class="name">Size: 90,100, 110,120,130,140,150</p>
+              </div>
+            </div>
+
+            <div class="content_left-bottom">
+              <h1>Sản phẩm bán chạy</h1>
+              <div class="list">
+                <div class="list_data">
+                  <img src="./img/Vay2.png" />
+                  <h1>Váy liền bé gái 23S018</h1>
+                  <p>359.000 đ</p>
+                </div>
+
+                <div class="list_data">
+                  <img src="./img/Vay3.png" />
+                  <h1>Váy liền bé gái 23S016</h1>
+                  <p>399.000 đ</p>
+                </div>
+
+                <div class="list_data">
+                  <img src="./img/Vay4.png" />
+                  <h1>Váy liền bé gái 23S004</h1>
+                  <p>359.000 đ</p>
+                </div>
+
+                <div class="list_data">
+                  <img src="./img/Vay5.png" />
+                  <h1>Váy liền bé gái 23S047</h1>
+                  <p>175.000 đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Tuyển dụng</a></li>
+            <li><a href="">Hỗ trợ</a></li>
+          </ul>
+          <p>@ 2023 CANIFA</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
+
+Đề4css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  /* nếu k có cái kia thì từ đây */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#main {
+  width: 1200px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+.header > img {
+  /* height: 90px; */
+  width: 100%;
+}
+
+.menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.menu > ul {
+  display: flex;
+  padding: 6px 0;
+}
+
+.menu > ul > li > a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  border-right: 1px solid #000;
+  padding-right: 14px;
+  margin: 0 8px;
+  color: #5569e4;
+}
+
+.content {
+  display: flex;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+}
+
+.content_right {
+  flex: 1;
+  border: 1px solid #ccc;
+}
+.content_right > div > h1 {
+  background-color: #5569e4;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 4px;
+  color: #fff;
+}
+
+.content_right-list > ul > li {
+  background-color: #e7ecef;
+  margin: 6px;
+  font-size: 18px;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.content_left {
+  flex: 4;
+  margin: 0 5px;
+}
+
+.content_left-top {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.content_left-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content_left-img > img {
+  width: 350px;
+}
+
+.content_left-text {
+  flex: 1;
+}
+
+.content_left-text > h1 {
+  font-weight: 600;
+}
+
+.content_left-text > h3 {
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.name {
+  text-align: justify;
+  margin-right: 10px;
+}
+
+.content_left-bottom {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+}
+
+.list_data > img {
+  width: 220px;
+  height: 180px;
+  margin: 4px 8px;
+}
+
+.list_data > h1 {
+  margin: 0 6px;
+  font-size: 18px;
+}
+
+.list_data > p {
+  margin: 4px 6px 8px 6px;
+  color: #e8343f;
+}
+
+.footer > ul {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.footer > ul > li > a {
+  color: #000;
+  border-right: 1px solid #000;
+  padding-right: 10px;
+  margin-left: 10px;
+  color: #5569e4;
+  font-weight: 600;
+}
+
+.footer > p {
+  margin-bottom: 15px;
+}
+
+.input > input {
+  width: 90%;
+  margin: 10px;
+  padding: 4px;
+}
+
+.btn {
+  color: #5569e4;
+  margin-left: 10px;
+  padding: 4px 6px;
+}
