@@ -1,0 +1,282 @@
+Đề 19
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <div>
+          <select>
+            <option>Home</option>
+          </select>
+          <select>
+            <option>Student</option>
+          </select>
+
+          <ul>
+            <li>Listing</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="list_img">
+          <div>
+            <div>
+              <img src="./img1.jpg" alt="" />
+              <h2 class="hd_r">Công nghệ thông tin</h2>
+              <p>
+                Thành lập năm 1999 với nhiệm vụ xây dựng chương trình đào tạo,
+                tổ chức thực hiện kế hoạch giảng dạy: tổ chức học tập và chủ trì
+                tổ chức quá trình đào tạo lĩnh vực công nghệ thông tin.
+              </p>
+            </div>
+            <button class="red">Xem chi tiết</button>
+          </div>
+          <div>
+            <div>
+              <img src="./img2.jpg" alt="" />
+              <h2 class="hd_yl">Khoa Điện - Điện tử</h2>
+              <p>
+                Khoa Điện - Điện tử, tiền thân là ban Điện, được thành lập từ
+                năm 1966 cùng sự ra đời của trường Trung học Công nghiệp Nam Hà
+                với nhiệm vụ đào tạo cán bộ trung cấp kỹ thuật.
+              </p>
+            </div>
+            <button class="blue">Xem chi tiết</button>
+          </div>
+
+          <div>
+            <div>
+              <img src="./img3.jpg" alt="" />
+              <h2 class="hd_bl">Khoa cơ khí</h2>
+              <p>
+                Thành lập từ năm 1966, trải qua gần 60 năm hình thành và phát
+                triển Khoa đã đào tạo hàng ngàn giáo viên dạy nghề, kỹ sư công
+                nghệ trình độ đại học và sau đại học.
+              </p>
+            </div>
+            <button class="yellow">Xem chi tiết</button>
+          </div>
+
+          <div>
+            <div>
+              <img src="./img4.jpg" alt="" />
+              <h2 class="hd_gr">Xem chi tiết</h2>
+              <p>
+                Đào tạo nguồn nhân lực trình độ đại học, cao đẳng: nghiên cứu
+                khoa học; tư vấn, phản biện, bồi dưỡng chuyên môn - nghiệp vụ và
+                chuyển giao công nghệ thuộc lĩnh vực kinh doanh và quản lý kinh
+                tế.
+              </p>
+            </div>
+            <button class="green">Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>
+          <h2>đại học sư phạm kỹ thuật nam định</h2>
+          <div class="list_tt">
+            <img src="./icon1.jpg" alt="" />
+            <p>Phường Lộc Hạ - Thành phố Nam Định</p>
+          </div>
+          <div class="list_tt">
+            <img src="./icon2.jpg" alt="" />
+            <p>(0228)3630858</p>
+          </div>
+
+          <div class="list_tt">
+            <img src="./icon3.jpg" alt="" />
+            <p>bants.skn@moet.edu.vn</p>
+          </div>
+
+          <div class="list_tt">
+            <img src="./icon4.jpg" alt="" />
+            <p>Facebook</p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Các khoa</h2>
+          <ul>
+            <li>Công nghệ thông tin</li>
+            <li>Điện - điện tử</li>
+            <li>Cơ khí</li>
+            <li>Kinh tế</li>
+            <li>Sư phạm kỹ thuật</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Danh mục</h2>
+          <ul>
+            <li>Tin tức</li>
+            <li>Sự kiện</li>
+            <li>Nghiên cứu</li>
+            <li>Đào tạo</li>
+            <li>Đối ngoại</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Liên hệ</h2>
+          <ul>
+            <li>Thư điện tử</li>
+            <li>Hỗ trợ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề19css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  padding: 25px;
+  align-items: center;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  color: #005fe4;
+  font-size: 20px;
+}
+
+.header > div > ul {
+  display: flex;
+  gap: 15px;
+}
+.header > div > select {
+  padding: 8px 10px;
+  border-radius: 50px;
+  background-color: #005fe4;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.header > h1 {
+  font-weight: 700;
+  color: #005fe4;
+}
+
+.list_img {
+  display: flex;
+  text-align: justify;
+}
+
+.list_img > div {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 20px;
+  width: 25%;
+}
+
+.list_img > div > div {
+  height: 370px;
+  border-radius: 4px;
+}
+
+.list_img > div > div > img {
+  width: 100%;
+}
+
+.list_img > div > div > p {
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.footer {
+  background-color: #0000ff;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  height: 148px;
+}
+
+.list_tt {
+  display: flex;
+  align-items: center;
+}
+
+.footer > div > h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 18px;
+  margin: 15px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.red {
+  background-color: #d0525e;
+}
+
+.blue {
+  background-color: #136cf9;
+}
+
+.yellow {
+  background-color: #fdc203;
+}
+
+.green {
+  background-color: #188557;
+}
+
+.hd_r {
+  color: #d0525e;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.hd_yl {
+  color: #136cf9;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.hd_bl {
+  color: #fdc203;
+  font-size: 20px;
+  padding: 12px;
+}
+
+.hd_gr {
+  color: #188557;
+  font-size: 20px;
+  padding: 12px;
+}
+
