@@ -1,0 +1,160 @@
+Đề2
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="content">
+        <h1>Thức ăn nhanh - fastfood</h1>
+        <p>
+          Thức ăn nhanh (Fastfood) là đồ ăn, thức uống có thể được chế biến
+          nhanh chóng và thưởng thức ngay tại chỗ hoặc mang đi. Đồ ăn nhanh
+          thường được chế biến sẵn khi khách đến quán, nhà hàng chỉ cần hâm nóng
+          hoặc chiên lại trong vài phút là có thể phục vụ khách.
+        </p>
+        <h3>Một số loại thức ăn phổ biến</h3>
+        <div class="list">
+          <div class="list_tx">
+            <div class="tx">
+              <img src="./img1.jpg" alt="" />
+              <h1>Hamburger</h1>
+              <p>
+                Hamburger là tên gọi dùng để chỉ một loại bánh mì kẹp gồm 2 phần
+                bánh với phần nhân là sa lát kẹp cùng thịt hun khói, thịt bò hay
+                pate. Phần thịt này đã được làm chín cùng với phần sa lát có thể
+                là cà chua, rau xà lách.... Bánh thường được ăn kèm cùng với
+                khoai tây chiên và đồ uống có ga
+              </p>
+            </div>
+            <button>Xem chi tiết</button>
+          </div>
+
+          <div class="list_tx">
+            <div class="tx">
+              <img src="./img2.jpg" alt="" />
+              <h1>Pizza</h1>
+              <p>
+                Pizza là loại bánh có hình tròn được nướng lên với 3 thành phần
+                chính là đế bánh, nhân bánh và phô mai phủ. Đế bánh được chế
+                biến từ quá trình ủ bột mì, nấm men và nước. Phần topping pizza
+                đa dạng gồm hải sản, xúc xích, phô mai, .... Kết hợp cùng lớp
+                phô mai béo ngậy thơm lừng
+              </p>
+            </div>
+            <button>Xem chi tiết</button>
+          </div>
+          <div class="list_tx">
+            <div class="tx">
+              <img src="./img3.jpg" alt="" />
+              <h1>Hot dog</h1>
+              <p>
+                Hot dog là món bánh mỳ kẹp xúc xích được dùng thêm mù tạt, nước
+                sốt cà chua, nước sốt mayonnaise. Một trong những món ăn được ưa
+                chuộng bởi sự tiện lợi và hương vị hấp dẫn. Tại Việt Nam, bánh
+                mỳ hot dog có hình dạng tam giác kèm chà bông, pho mai, xúc xích
+                kẹp ăn cùng
+              </p>
+            </div>
+            <button>Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Follow us</p>
+        <div>
+          <img src="./icon1.jpg" alt="" />
+          <img src="./icon2.jpg" alt="" />
+          <img src="./icon3.jpg" alt="" />
+          <img src="./icon4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+ Dề2css
+ {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #f2f3f5;
+}
+.content {
+  margin: 20px;
+}
+
+.content > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+.content > h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.content > p {
+  margin: 15px 0;
+}
+
+.list {
+  display: flex;
+}
+
+.list_tx {
+  width: 33%;
+  margin: 20px;
+}
+
+.tx {
+  height: 520px;
+}
+
+.tx > img {
+  width: 100%;
+}
+
+.tx > h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.tx > p {
+  text-align: justify;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.list_tx > button {
+  padding: 12px 14px;
+  background-color: #d73a41;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-left: 220px;
+}
+
+.footer {
+  text-align: center;
+  color: #fff;
+  background-color: #1a8652;
+  height: 80px;
+  line-height: 2;
+}
+
+.footer > p {
+  font-size: 18px;
+}
