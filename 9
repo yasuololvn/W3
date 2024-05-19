@@ -1,0 +1,155 @@
+ Đề 9
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <h1>Trường Đại học sư phạm kỹ thuật nam định</h1>
+      </div>
+
+      <div class="content">
+        <div class="list_img">
+          <div>
+            <img src="./img1.jpg" alt="" />
+            <h1>Khoa Công nghê thông tin</h1>
+          </div>
+          <div>
+            <img src="./img2.jpg" alt="" />
+            <h1>Khoa Điện - Điện tử</h1>
+          </div>
+        </div>
+
+        <div class="list_img">
+          <div>
+            <img src="./img3.jpg" alt="" />
+            <h1>Khoa Cơ khí</h1>
+          </div>
+          <div>
+            <img src="./img4.jpg" alt="" />
+            <h1>Khoa Kinh tế</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>
+          <h2>đại học sư phạm kỹ thuật nam định</h2>
+          <div class="list_tt">
+            <img src="./icon1.jpg" alt="" />
+            <p>Phường Lộc Hạ - Thành phố Nam Định</p>
+          </div>
+          <div class="list_tt">
+            <img src="./icon2.jpg" alt="" />
+            <p>(0228)3630858</p>
+          </div>
+
+          <div class="list_tt">
+            <img src="./icon3.jpg" alt="" />
+            <p>bants.skn@moet.edu.vn</p>
+          </div>
+
+          <div class="list_tt">
+            <img src="./icon4.jpg" alt="" />
+            <p>Facebook</p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Các khoa</h2>
+          <ul>
+            <li>Công nghệ thông tin</li>
+            <li>Điện - điện tử</li>
+            <li>Cơ khí</li>
+            <li>Kinh tế</li>
+            <li>Sư phạm kỹ thuật</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Danh mục</h2>
+          <ul>
+            <li>Tin tức</li>
+            <li>Sự kiện</li>
+            <li>Nghiên cứu</li>
+            <li>Đào tạo</li>
+            <li>Đối ngoại</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Liên hệ</h2>
+          <ul>
+            <li>Thư điện tử</li>
+            <li>Hỗ trợ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề9css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  margin: 10px;
+  text-align: center;
+}
+
+.header > h1 {
+  color: #e7cc67;
+  text-transform: uppercase;
+}
+
+.list_img {
+  display: flex;
+}
+
+.list_img > div {
+  margin: 10px 20px;
+  flex: 1;
+}
+
+.list_img > div > img {
+  width: 560px;
+}
+
+.list_img > div > h1 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #0000ff;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  height: 148px;
+}
+
+.list_tt {
+  display: flex;
+  align-items: center;
+}
+
+.footer > div > h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
