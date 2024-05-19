@@ -1,0 +1,247 @@
+Đề 11
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <h1>Trường Đại học sư phạm kỹ thuật nam định</h1>
+      </div>
+
+      <div class="content">
+        <div class="list_img">
+          <div>
+            <img src="./img1.jpg" alt="" />
+            <h1>Khoa Công nghê thông tin</h1>
+          </div>
+          <div>
+            <img src="./img2.jpg" alt="" />
+            <h1>Khoa Điện - Điện tử</h1>
+          </div>
+        </div>
+
+        <div class="list_img">
+          <div>
+            <img src="./img3.jpg" alt="" />
+            <h1>Khoa Cơ khí</h1>
+          </div>
+          <div>
+            <img src="./img4.jpg" alt="" />
+            <h1>Khoa Kinh tế</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer_t">
+          <div>
+            <h1>Về chúng tôi</h1>
+            <ul>
+              <li>Trường Đại học Sự phạm Kỹ thuật Nam Định</li>
+              <li>Đường Phù Nghĩa - Phường Lộc Hạ</li>
+              <li>Thành phố Nam Định</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Tuyển sinh</h1>
+            <ul>
+              <li>Đại học Công nghệ kỹ thuật</li>
+              <li>Đại học kinh tế</li>
+              <li>Liên thông Đại học</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Thông tin liên hệ</h1>
+            <ul>
+              <img src="./Thư mục mới/img.jpg" alt="" />
+              <img src="./Thư mục mới/img1.jpg" alt="" />
+              <img src="./Thư mục mới/img2.jpg" alt="" />
+              <img src="./Thư mục mới/img3.jpg" alt="" />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề 11css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  margin: 10px;
+  text-align: center;
+}
+
+.header > h1 {
+  color: #e7cc67;
+  text-transform: uppercase;
+}
+
+.content {
+  background-color: #b6dbeb;
+}
+.list_img {
+  display: flex;
+}
+
+.list_img > div {
+  margin: 10px 20px;
+  flex: 1;
+}
+
+.list_img > div > img {
+  width: 560px;
+}
+
+.list_img > div > h1 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.footer {
+  position: relative;
+  background-color: #b6dbeb;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.footer_t {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.footer_t > div > h1 {
+  font-size: 24px;
+  margin: 13px 0;
+}
+
+Đề 12
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <img src="./img/dientu6.jpg" alt="" />
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>Bảng tin</li>
+          <li>Thư viện</li>
+          <li>Bài viết</li>
+          <li>Sản phẩm</li>
+          <li>Công cụ</li>
+          <li>Thành viên</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="content_left">
+          <div>
+            <h1>Quản trị tin tức</h1>
+            <p>Danh sách tin mới</p>
+            <p>Thêm tin mới</p>
+            <p>Sửa tin</p>
+            <p>Xoá tin</p>
+            <p>Tìm kiếm tin</p>
+          </div>
+
+          <div>
+            <h1>Quản trị sản phẩm</h1>
+            <p>Danh sách sản phẩm</p>
+            <p>Thêm - Sửa - Xoá</p>
+            <p>Tìm kiếm sản phẩm</p>
+          </div>
+
+          <div>
+            <h1>Danh mục thành viên</h1>
+            <p>Thành viên</p>
+            <p>Thêm thành viên</p>
+          </div>
+
+          <div>
+            <h1>Banner quảng cáo</h1>
+            <p>Danh sách banner</p>
+            <p>Thêm banner mới</p>
+            <p>Danh sách quảng cáo</p>
+          </div>
+
+          <div>
+            <h1>Thống kê website</h1>
+            <p>Lượt truy cập</p>
+            <p>Đang online</p>
+          </div>
+        </div>
+
+        <div class="content_center">
+          <h1>Nội dung các liên kết</h1>
+        </div>
+
+        <div class="content_right">
+          <div>
+            <h1>Đăng nhập hệ thông</h1>
+            <div>
+              <p>Username</p>
+              <input type="text" />
+            </div>
+            <div>
+              <p>Password</p>
+              <input type="password" />
+              <button>Đăng nhập</button>
+            </div>
+          </div>
+
+          <div class="img_fff">
+            <h1>Tin mới</h1>
+            <p><img src="./img/trang.jpg" alt="" /></p>
+          </div>
+          <div class="img_fff">
+            <h1>Quảng cáo</h1>
+            <p>
+              <img src="./img/trang.jpg" alt="" />
+            </p>
+            <p><img src="./img/trang.jpg" alt="" /></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Họ và tên:___________</p>
+        <p>Lớp:____________</p>
+        <p>Khoa:____________</p>
+      </div>
+    </div>
+  </body>
+</html>
+
