@@ -1,0 +1,243 @@
+Đề 17
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <img src="./img/1.jpg" alt="" />
+        <h1>Đào tạo lập trình cam kết 100% đầu ra</h1>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>Trang chủ</li>
+          <li>Giới thiệu</li>
+          <li>Các khoá học</li>
+          <li>Tin tức</li>
+          <li>Sự kiện</li>
+          <li>Liên hệ</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="content_left">
+          <h1>Các khoá học liên quan</h1>
+          <div>
+            <img src="./img/2.jpg" alt="" />
+            <p>Toàn tập về biến trong CSS và ứng dụng thực tế</p>
+          </div>
+
+          <div>
+            <img src="./img/3.jpg" alt="" />
+            <p>Dựng giao diện từ Photoshop sang HTML CSS - Full Course</p>
+          </div>
+        </div>
+        <div class="content_right">
+          <div class="content_right-top">
+            <h1>Toàn tập về biến trong CSS và ứng dụng thực tế</h1>
+
+            <div>
+              <p>Thời gian : 30 phút</p>
+              <div class="outstanding">
+                <p>Miễn phí</p>
+              </div>
+              <div class="outstanding">
+                <p>Online</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content_right-bt">
+            <div class="gt">
+              <h1>Giới thiệu khoá học</h1>
+              <p>
+                Biến là khái niệm quan trọng trong CSS, giúp chúng ta không bị
+                trùng lặp code khi viết code css, đồng thời giúp việc bảo trì và
+                thay đổi code trong tương lai trở nên dễ ràng hơn. Việc làm chủ
+                được biên trong css giúp các bạn làm việc với các css framework
+                hay các nền tảng như Sass hay Less dễ ràng hơn rất nhiều. Nội
+                dung của khóa này tuy không nhiều nhưng đủ để các bạn nắm được
+                hết các khái niệm của biến trong CSS và từ đó áp dụng hiệu quả
+                vào công việc của mình.
+              </p>
+            </div>
+
+            <div class="nd">
+              <h1>Nội dung khoá học</h1>
+              <p>
+                Bài 1: Tổng quan về khoá học và tìm hiểu tại sao phải sử dung
+                biến trong css
+              </p>
+
+              <p>Bài 2: Khai báo và sử dụng biến</p>
+
+              <p>Bài 3: Phạm vi sử dụng biến</p>
+
+              <p>Bài 4: Đặt giá trị mặc định cho biến</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>
+          <h1>Suntech</h1>
+          <p>Học lập trình để làm chủ tương lai trong kỷ nguyên 4.0</p>
+          <p>Email: daotaolaptrinhsuntech@gmail.com</p>
+          <p>Hostline: 0942 668 586</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề 17css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  /* nếu k có cái kia thì từ đây */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  background-color: #f0fbf9;
+}
+
+.header {
+  /* height: 100px; */
+  display: flex;
+  align-items: center;
+}
+
+.header > img {
+  width: 150px;
+  height: 150px;
+  flex: 1;
+}
+
+.header > h1 {
+  flex: 3;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu {
+  height: 50px;
+  line-height: 50px;
+  background-color: #3b822d;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 30px;
+}
+
+.menu > ul > li {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.content {
+  display: flex;
+  margin: 20px 25px;
+}
+.content_right {
+  margin-left: 20px;
+}
+
+.content_right-top > div {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+  font-size: 18px;
+  align-items: center;
+}
+
+.outstanding {
+  background-color: #f26b23;
+  padding: 4px 6px;
+}
+
+.gt {
+  background-color: #fff;
+  text-align: justify;
+  font-size: 25px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.gt > h1 {
+  padding: 20px 25px 0;
+}
+
+.gt > p {
+  padding: 20px 25px;
+}
+
+.nd {
+  background-color: #fff;
+  text-align: justify;
+  font-size: 25px;
+  border-radius: 10px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.nd > h1 {
+  padding: 10px 25px 0;
+}
+
+.nd > p {
+  padding: 10px 25px;
+}
+
+.content_left > div > img {
+  width: 400px;
+  border-radius: 4px;
+}
+
+.content_left > h1 {
+  margin-bottom: 20px;
+}
+
+.content_left > div > p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer > div {
+  text-align: center;
+  margin: 25px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
