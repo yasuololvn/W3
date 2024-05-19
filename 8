@@ -1,0 +1,153 @@
+Dề8
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <h1>Phương thức xét tuyển</h1>
+        <h1>Trường Đại học Sư phạm Kỹ thuật Nam Định</h1>
+      </div>
+
+      <div class="content">
+        <div>
+          <img src="./icon.jpg" alt="" />
+          <h2>Phương thức 1</h2>
+          <p>
+            Xét tuyển dựa vào kết quả Kỳ thi tốt nghiệp THPT năm 2024 theo quy
+            định của Bộ Giáo dục và Đào tạo (Bộ GD&ĐT). Tổ hợp dùng để xét tuyển
+            (A00, A01; B00 D01; D06)
+          </p>
+        </div>
+
+        <div>
+          <img src="./icon1.jpg" alt="" />
+          <h2>Phương thức 2</h2>
+          <p>
+            Xét tuyển dựa vào kết quả học tập cả năm lớp 12 của các môn học
+            trong tổ hợp thí sinh đăng ký xét tuyển (A00, A01, B00; D01; D06)
+          </p>
+        </div>
+
+        <div>
+          <img src="./icon2.jpg" alt="" />
+          <h2>Phương thức 3</h2>
+          <p>
+            Kết quả Kỳ thi đánh giá năng lực (ĐGNL) học sinh THPT của Đại học
+            quốc gia Hà Nội và Kỳ thi đánh giá Tư duy (ĐGTD) học sinh THPT của
+            Đại học Bách khoa năm 2024.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer_t">
+          <div>
+            <h1>Về chúng tôi</h1>
+            <ul>
+              <li>Trường Đại học Sự phạm Kỹ thuật Nam Định</li>
+              <li>Đường Phù Nghĩa - Phường Lộc Hạ</li>
+              <li>Thành phố Nam Định</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Tuyển sinh</h1>
+            <ul>
+              <li>Đại học Công nghệ kỹ thuật</li>
+              <li>Đại học kinh tế</li>
+              <li>Liên thông Đại học</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Thông tin liên hệ</h1>
+            <ul>
+              <img src="./img.jpg" alt="" />
+              <img src="./img1.jpg" alt="" />
+              <img src="./img2.jpg" alt="" />
+              <img src="./img3.jpg" alt="" />
+            </ul>
+          </div>
+        </div>
+        <div class="footer_b">
+          <p>Copyright DK CNTT 17</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề8css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  position: absolute;
+  width: 1200px;
+  background-color: #01bacf;
+  color: #fff;
+  height: 160px;
+  line-height: 1.4;
+}
+
+.header > h1 {
+  margin-left: 20px;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  top: 100px;
+}
+
+.content > div {
+  width: 32%;
+  background-color: #f7d8d8;
+  margin: 15px 24px;
+  text-align: justify;
+}
+
+.content > div > img {
+  margin: 10px 20px 0 20px;
+}
+.content > div > h2,
+.content > div > p {
+  margin: 10px 20px 30px 20px;
+}
+
+.footer {
+  top: 110px;
+  position: relative;
+  background-color: #325c6a;
+  color: #fff;
+}
+
+.footer_t {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.footer_t > div > h1 {
+  font-size: 24px;
+  margin: 13px 0;
+}
+
+.footer_b {
+  padding: 16px 0;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
