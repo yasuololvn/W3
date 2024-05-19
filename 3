@@ -1,0 +1,211 @@
+ Đề 3 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="img">
+        <img src="./bg.jpg" alt="" />
+      </div>
+      <div class="pst">
+        <div class="header">
+          <h1>NUTE</h1>
+          <div>
+            <select>
+              <option>Khoa</option>
+            </select>
+            <select>
+              <option>Phòng - Trung tâm</option>
+            </select>
+
+            <ul>
+              <li>Đào tạo</li>
+              <li>Hợp tác</li>
+              <li>Nghiên cứu khoa học</li>
+              <li>Thư viện</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="text">
+            <h1 class="nute">NUTE <span>xin chào</span></h1>
+          </div>
+          <div class="account">
+            <div class="input">
+              <p>Tài khoản</p>
+              <input type="text" />
+            </div>
+            <div class="input">
+              <p>Mật khẩu</p>
+              <input type="password" />
+            </div>
+            <div>
+              <input type="checkbox" /> Ghi nhớ
+              <a href="">Quên mật khẩu</a>
+            </div>
+
+            <button>Đăng nhập</button>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>Trường Đại học sư phạm kỹ thuật Nam Định</p>
+          <p>Trường Đại học sư phạm kỹ thuật Nam Định</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề3css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#main {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.img {
+  position: absolute;
+  filter: blur(6px);
+}
+
+.img > img {
+  width: 1294px;
+  height: 686px;
+}
+.pst {
+  position: relative;
+  background-color: rgb(199 212 228 / 50%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  color: #005fe4;
+  font-size: 20px;
+}
+
+.header > div > ul {
+  display: flex;
+  gap: 15px;
+}
+.header > div > select {
+  padding: 8px 10px;
+  border-radius: 50px;
+  background-color: #005fe4;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.header > h1 {
+  font-weight: 700;
+  color: #005fe4;
+}
+
+.content {
+  width: 1000px;
+  height: 434px;
+  display: flex;
+  background-color: #fff;
+  margin: 40px auto;
+}
+
+.text {
+  background-color: #005fe4;
+  flex: 1;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text > h1 {
+  font-size: 40px;
+  width: 170px;
+}
+
+.text > p {
+  font-size: 40px;
+}
+
+.account {
+  flex: 1;
+  margin: 20px;
+}
+
+.input {
+  margin: 10px 0;
+}
+
+.input > p {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.input > input {
+  padding: 10px;
+  width: 100%;
+}
+
+.account > div {
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.account > div > a {
+  color: #005fe4;
+  margin-left: 40px;
+}
+
+.account > button {
+  padding: 12px 10px;
+  font-size: 20px;
+  background-color: #005fe4;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.footer {
+  background-color: #005fe4;
+  height: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer > p {
+  padding-top: 15px;
+}
+
+.footer > p:last-child {
+  padding-bottom: 15px;
+}
+
+.nute {
+  color: #fbfc08;
+}
+
+span {
+  color: #fff;
+}
