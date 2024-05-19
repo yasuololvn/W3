@@ -1,0 +1,106 @@
+Đề16
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>Trả lời</h1>
+      <p>
+        Email của bạn sẽ không được hiển thị công khai. Các trường bắt buộc được
+        đánh dấu *
+      </p>
+
+      <textarea></textarea>
+
+      <div class="ip">
+        <p>Tên <span>*</span></p>
+        <input type="text" />
+      </div>
+
+      <div class="ip1">
+        <div class="ip2">
+          <p>Email <span>*</span></p>
+          <input type="text" />
+        </div>
+        <div class="ip2">
+          <p>Trang web</p>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="cb">
+        <input type="checkbox" />
+        Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình
+        luận kế tiếp của tôi.
+      </div>
+
+      <button>Phản hổi</button>
+    </div>
+  </body>
+</html>
+
+Đề16css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  padding: 15px;
+  border-bottom: 2px solid #ccc;
+}
+p {
+  margin: 15px;
+}
+
+textarea {
+  margin: 15px;
+  width: 98%;
+  height: 200px;
+}
+
+.ip > input {
+  width: 98%;
+  margin: 0 15px;
+  padding: 10px;
+}
+
+.ip1 {
+  display: flex;
+  justify-content: center;
+}
+
+.ip2 > input {
+  width: 570px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.cb {
+  margin: 15px;
+}
+span {
+  color: red;
+}
+
+button {
+  padding: 10px 12px;
+  margin: 15px;
+  background-color: #0a9e01;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+}
