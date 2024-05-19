@@ -1,0 +1,245 @@
+Đề 25
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <img src="./img/15.jpg" alt="" />
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li>Bảng tin</li>
+          <li>Sản phẩm</li>
+          <li>Thành viên</li>
+          <li>Phản hồi</li>
+          <li>Đăng xuất</li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="content_left">
+          <div>
+            <h1>Quản trị tin tức</h1>
+            <p>Danh sách tin mới</p>
+            <p>Thêm tin mới</p>
+            <p>Sửa tin</p>
+            <p>Xoá tin</p>
+            <p>Tìm kiếm tin</p>
+          </div>
+
+          <div>
+            <h1>Quản trị sản phẩm</h1>
+            <p>Danh sách sản phẩm</p>
+            <p>Thêm - Sửa - Xoá</p>
+            <p>Tìm kiếm sản phẩm</p>
+          </div>
+
+          <div>
+            <h1>Danh mục thành viên</h1>
+            <p>Thành viên</p>
+            <p>Thêm thành viên</p>
+          </div>
+
+          <div>
+            <h1>Banner quảng cáo</h1>
+            <p>Danh sách banner</p>
+            <p>Thêm banner mới</p>
+            <p>Danh sách quảng cáo</p>
+          </div>
+
+          <div>
+            <h1>Thống kê website</h1>
+            <p>Lượt truy cập</p>
+            <p>Đang online</p>
+          </div>
+        </div>
+
+        <div class="content_center">
+          <h1>Nội dung các liên kết</h1>
+        </div>
+
+        <div class="content_right">
+          <div>
+            <h1>Đăng nhập hệ thông</h1>
+            <div>
+              <p>Username</p>
+              <input type="text" />
+            </div>
+            <div>
+              <p>Password</p>
+              <input type="password" />
+              <button>Đăng nhập</button>
+            </div>
+          </div>
+
+          <div class="img_fff">
+            <h1>Tin mới</h1>
+            <p><img src="./img/trang.jpg" alt="" /></p>
+          </div>
+          <div class="img_fff">
+            <h1>Quảng cáo</h1>
+            <p>
+              <img src="./img/trang.jpg" alt="" />
+            </p>
+            <p><img src="./img/trang.jpg" alt="" /></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Họ và tên:___________</p>
+        <p>Lớp:____________</p>
+        <p>Khoa:____________</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề 25css
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  /* nếu k có cái kia thì từ đây */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  height: 200px;
+}
+
+.header > img {
+  height: 200px;
+  width: 100%;
+}
+
+.menu {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+}
+
+.menu > ul {
+  width: 60%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #51afe2;
+  border-radius: 5px;
+}
+
+.menu > ul > li {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.content {
+  display: flex;
+}
+
+.content_left {
+  flex: 1;
+}
+
+.content_right > div > h1,
+.content_left > div > h1 {
+  background-color: #006502;
+  padding: 6px 8px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.content_left > div > p {
+  color: #006502;
+  font-size: 18px;
+  border-bottom: 1px solid #006502;
+  padding: 8px 6px;
+}
+
+.content_left > div > p:hover {
+  text-decoration: underline;
+}
+
+.content_left > div:last-child > p {
+  color: #000;
+}
+
+.content_center {
+  flex: 2;
+  background-color: #609da0;
+}
+
+.content_center > h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.content_left {
+  flex: 1;
+}
+
+.content_right > div > div {
+  margin: 10px 15px;
+}
+
+.content_right > div > div > p {
+  font-size: 22px;
+}
+
+.content_right > div > div > input {
+  padding: 4px 6px;
+  width: 90%;
+}
+
+.content_right > div > div > button {
+  margin: 10px 0;
+  padding: 6px 8px;
+}
+
+.img_fff {
+  height: 200px;
+}
+
+.img_fff > p > img {
+  width: 300px;
+  height: 146px;
+}
+
+.footer {
+  background-color: #4bb1df;
+  font-size: 16px;
+  color: #fff;
+  height: 80px;
+  line-height: 1.5;
+}
+
+.footer > p {
+  padding: 2px 15px;
+}
