@@ -1,0 +1,113 @@
+Đề 22
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="content">
+        <div class="content_left">
+          <div>
+            <div class="header">
+              <img src="./img/trang.jpg" alt="" />
+            </div>
+            <div class="menu"></div>
+
+            <div class="ctn">
+              <div class="content_btl">
+                <h1>Nội dung các liên kết</h1>
+              </div>
+              <div class="content_center">
+                <div>
+                  <h1>Quản trị tin tức</h1>
+                  <p>Danh sách tin mới</p>
+                  <p>Thêm tin mới</p>
+                  <p>Sửa tin</p>
+                  <p>Xoá tin</p>
+                  <p>Tìm kiếm tin</p>
+                </div>
+
+                <div>
+                  <h1>Quản trị sản phẩm</h1>
+                  <p>Danh sách sản phẩm</p>
+                  <p>Thêm - Sửa - Xoá</p>
+                  <p>Tìm kiếm sản phẩm</p>
+                </div>
+
+                <div>
+                  <h1>Danh mục thành viên</h1>
+                  <p>Thành viên</p>
+                  <p>Thêm thành viên</p>
+                </div>
+
+                <div>
+                  <h1>Banner quảng cáo</h1>
+                  <p>Danh sách banner</p>
+                  <p>Thêm banner mới</p>
+                  <p>Danh sách quảng cáo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_right">
+          <div>
+            <h1>Đăng nhập hệ thông</h1>
+            <div>
+              <p>Username</p>
+              <input type="text" />
+            </div>
+            <div>
+              <p>Password</p>
+              <input type="password" />
+              <button>Đăng nhập</button>
+            </div>
+          </div>
+
+          <div class="img_fff">
+            <h1>Tin mới</h1>
+            <p><img src="./img/trang.jpg" alt="" /></p>
+          </div>
+
+          <div class="img_fff">
+            <h1>Quảng cáo</h1>
+            <p>
+              <img src="./img/trang.jpg" alt="" />
+            </p>
+          </div>
+
+          <div class="img_fff">
+            <p>
+              <img src="./img/trang.jpg" alt="" />
+            </p>
+          </div>
+
+          <div>
+            <h1>Thống kê website</h1>
+            <p>Lượt truy cập</p>
+            <p>Đang online</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Họ và tên:___________</p>
+        <p>Lớp:____________</p>
+        <p>Khoa:____________</p>
+      </div>
+    </div>
+  </body>
+</html>
