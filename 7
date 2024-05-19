@@ -1,0 +1,309 @@
+ Đề 7hml
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Từ đây -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Đến đây có cũng đc k có cũng đc -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="header">
+        <img src="./img/Bongban1.png" />
+      </div>
+      <div class="main_content">
+        <div class="menu">
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Góp ý</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+          </ul>
+        </div>
+
+        <div class="content">
+          <div class="content_right">
+            <div class="content_right-top">
+              <div class="content_right-img">
+                <img src="./img/bongban2.jpg" />
+              </div>
+              <div class="content_right-text">
+                <h1>Top speed</h1>
+
+                <h3>
+                  Hãng:
+                  <span>Avlox/AVX</span>
+                </h3>
+
+                <h3>Giá: <span>1.950.000 VNĐ</span></h3>
+
+                <h3>
+                  Tình trạng:
+                  <span>Còn hàng</span>
+                </h3>
+
+                <h3>Thông tin chi tiết:</h3>
+                <p class="name">
+                  AVX/Avlox Monoset là cây vợt nhanh nhất trên thị trường vào
+                  thời điểm hiện tại. Đối với những người chơi đam mê tốc độ với
+                  lối đánh đầy uy lực hay những người chơi thiên về ma sát cần
+                  một cốt vợi có tốc độ uy lực cao để phát huy thế mạnh của mình
+                  thì AVX/Avlox Monoset là cây vợt hoàn hảo
+                </p>
+              </div>
+            </div>
+
+            <div class="content_right-bottom">
+              <h1>Sản phẩm mới</h1>
+              <div class="list">
+                <div class="list_data">
+                  <img src="./img/bongban3.jpg" />
+                  <h1>Monoset</h1>
+                  <p>1.780.000 VNĐ</p>
+                </div>
+
+                <div class="list_data">
+                  <img src="./img/bongban5.jpg" />
+                  <h1>Top set</h1>
+                  <p>890.000 VNĐ</p>
+                </div>
+
+                <div class="list_data">
+                  <img src="./img/bongban6.jpg" />
+                  <h1>Áo thi đấu TSP xanh 1181UBG</h1>
+                  <p>790.000 VNĐ</p>
+                </div>
+
+                <div class="list_data">
+                  <img src="./img/tui1.jpg" />
+                  <h1>Túi xách cỡ trung</h1>
+                  <p>680.000 VNĐ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content_left">
+            <div class="content_left-list">
+              <h1>Danh mục sản phẩm</h1>
+              <ul>
+                <li>Mặt vợt</li>
+                <li>Cối vợt</li>
+                <li>Bóng</li>
+                <li>Giầy/tất bóng bàn</li>
+                <li>Quần áo bóng bàn</li>
+                <li>Phụ kiện bóng bàn</li>
+                <li>Thiết bị bóng bàn</li>
+                <li>Bộ vợt khuyên dùng</li>
+              </ul>
+            </div>
+
+            <div class="content_left-select">
+              <h1>Lựa chọn sản phẩm</h1>
+              <div class="select">
+                <p>Chọn sản phẩm theo nhóm</p>
+                <select>
+                  <option>--Chọn nhiều nhóm sản phẩm--</option>
+                </select>
+              </div>
+
+              <div class="select">
+                <p>Chọn sản phẩm theo mức giá</p>
+                <select>
+                  <option>--Chọn mức giá--</option>
+                </select>
+              </div>
+              <button>Tìm kiếm</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <ul>
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Góp ý</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+          </ul>
+          <p>CopyRight @ 2010</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Đề7css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+  /* nếu k có cái kia thì từ đây */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* font-style: normal; */
+  /* đến đây k có */
+}
+
+#main {
+  width: 1200px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+.header > img {
+  height: 90px;
+}
+
+.menu {
+  background-color: #fad8ce;
+}
+.menu > ul {
+  display: flex;
+  padding: 6px 0;
+}
+
+.menu > ul > li > a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  border-right: 1px solid #000;
+  padding-right: 14px;
+  margin: 0 8px;
+  color: #e8343f;
+}
+
+.content {
+  display: flex;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+}
+
+.content_left {
+  flex: 1;
+  border: 1px solid #ccc;
+}
+.content_left > div > h1 {
+  background-color: #fda402;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 4px;
+  color: #fff;
+}
+
+.content_left-list > ul > li {
+  background-color: #e7ecef;
+  margin: 6px;
+  font-size: 18px;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.select > p {
+  margin: 8px;
+}
+
+.select > select {
+  margin-left: 8px;
+}
+
+.content_left-select > button {
+  padding: 4px 6px;
+  margin: 6px 8px;
+}
+.content_right {
+  flex: 4;
+  /* border: 1px solid #ccc; */
+  margin: 0 5px;
+}
+
+.content_right-top {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.content_right-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.content_right-img > img {
+  width: 350px;
+}
+
+.content_right-text {
+  flex: 1;
+}
+
+.content_right-text > h1 {
+  font-weight: 600;
+}
+
+.content_right-text > h3 {
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.name {
+  text-align: justify;
+  margin-right: 10px;
+}
+
+.content_right-bottom {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+}
+
+.list_data > img {
+  width: 220px;
+  height: 180px;
+  margin: 4px 8px;
+}
+
+.list_data > h1 {
+  margin: 0 6px;
+  font-size: 18px;
+}
+
+.list_data > p {
+  margin: 4px 6px 8px 6px;
+  color: #e8343f;
+}
+
+.footer > ul {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.footer > ul > li > a {
+  color: #000;
+  border-right: 1px solid #000;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.footer > p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
